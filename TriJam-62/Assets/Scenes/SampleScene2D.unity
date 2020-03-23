@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4543a000778885a40b3a4b9cee9e85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 10
+  price: 25
   prefab: {fileID: 8309160372354606111, guid: e7bf7ea8a5c065342936674175aa0b04, type: 3}
   priceText: {fileID: 1470811525}
   movedPart: {fileID: 518227390}
@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4543a000778885a40b3a4b9cee9e85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 5
+  price: 10
   prefab: {fileID: 7321690309916857639, guid: ee2a08a21c92cc74fa3a346abf0590a5, type: 3}
   priceText: {fileID: 575145888}
   movedPart: {fileID: 1195823667}
@@ -1911,8 +1911,8 @@ MonoBehaviour:
     type: 3}
   buildSelectionCurr: {fileID: 0}
   isPlaying: 1
-  currEnergy: 0
-  maxEnergy: 100
+  currEnergy: 50
+  maxEnergy: 50
   cells: []
   selectedCell: {fileID: 0}
 --- !u!1 &873615948
@@ -2189,7 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4543a000778885a40b3a4b9cee9e85c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 15
+  price: 50
   prefab: {fileID: 3832216370992020179, guid: 3863a1b5ba70c5f4dbc597f44d9a2d43, type: 3}
   priceText: {fileID: 1646519076}
   movedPart: {fileID: 1671307448}

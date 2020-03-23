@@ -14,6 +14,7 @@ public class StorageCell : BaseCell {
 	public override void OnKill() {
 		base.OnKill();
 		Player.instance.maxEnergy -= energyCapAdd;
+		Player.instance.AddEnergy(0);
 	}
 
 }

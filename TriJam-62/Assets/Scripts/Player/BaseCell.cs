@@ -39,6 +39,21 @@ public class BaseCell : MonoBehaviour {
 		selection.SetActive(true);
 		Player.instance.camera.Follow = this.gameObject.transform;
 		Player.instance.camera.LookAt = this.gameObject.transform;
+
+		if (this is CannonCell) {
+			LeanTween.cancel(Player.instance.camera.gameObject, false);
+			LeanTween.value(Player.instance.camera.gameObject, Player.instance.camera.m_Lens.OrthographicSize, 15.0f, 0.5f)
+				.setOnUpdate((float s) => {
+					Player.instance.camera.m_Lens.OrthographicSize = s;
+				});
+		}
+		else {
+			LeanTween.cancel(Player.instance.camera.gameObject, false);
+			LeanTween.value(Player.instance.camera.gameObject, Player.instance.camera.m_Lens.OrthographicSize, 20.0f, 0.5f)
+				.setOnUpdate((float s) => { 
+					Player.instance.camera.m_Lens.OrthographicSize = s;
+				});
+		}
 	}
 
 	public virtual void Unselect() {

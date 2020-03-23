@@ -27,11 +27,15 @@ public class Player : MonoBehaviour {
 		instance = this;
 	}
 
+	private void Update() {
+		AddEnergy(Time.deltaTime);
+	}
+
 	public void AddEnergy(float e) {
 		currEnergy += e;
 		if (currEnergy > maxEnergy)
 			currEnergy = maxEnergy;
-		energyText.text = $"Energy: {currEnergy}/{maxEnergy}";
+		energyText.text = $"Energy: {(int)currEnergy}/{maxEnergy}";
 		onAddEnergy?.Invoke();
 	}
 }
