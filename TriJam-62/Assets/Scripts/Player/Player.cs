@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Cinemachine;
 using TMPro;
 
@@ -38,6 +39,15 @@ public class Player : MonoBehaviour {
 		if (isPlaying) {
 			scoreText.text = "Score: " + (score += Time.deltaTime).ToString("0");
 		}
+
+		if(cells.Count == 0) {
+			endGame.SetActive(true);
+			isPlaying = false;
+		}
+	}
+
+	public void Restart() {
+		Application.LoadLevel(0);
 	}
 
 	public void AddEnergy(float e) {
