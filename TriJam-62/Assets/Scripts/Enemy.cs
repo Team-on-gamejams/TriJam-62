@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-	// Start is called before the first frame update
-	void Start() {
+	public float maxHp = 100.0f;
+	public float takeDmg = 10;
+	public float currHp;
+
+	public GameObject selection;
+
+	private void Awake() {
+		maxHp = Random.Range(10, 111);
+		currHp = maxHp;
+	}
+
+	void Update() {
 
 	}
 
-	// Update is called once per frame
-	void Update() {
-
+	public void TakeDamage() {
+		currHp -= takeDmg;
+		if (currHp <= 0) {
+			Destroy(gameObject);
+		}
 	}
 }

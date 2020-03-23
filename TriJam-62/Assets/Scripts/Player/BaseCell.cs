@@ -1,19 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BaseCell : MonoBehaviour {
 	public float needEnergyForBuild = 20.0f;
 	public float maxHp = 100.0f;
+	public float takeDmg = 10;
 	public float currHp;
 
 	public GameObject selection;
+	public Slider hpSlider;
 
 	private void Awake() {
 		currHp = maxHp;
 		selection.SetActive(false);
+		hpSlider.gameObject.SetActive(false);
+		hpSlider.minValue = 0;
+		hpSlider.maxValue = maxHp;
 
 		OnBuild();
+	}
+
+	private void OnDestroy() {
+		OnKill();
 	}
 
 	public virtual void OnBuild() {
@@ -34,8 +44,19 @@ public class BaseCell : MonoBehaviour {
 		selection.SetActive(false);
 	}
 
+	public void TakeDamage() {
+		currHp -= takeDmg;
+		if(currHp <= 0) {
+			Destroy(gameObject);
+		}
+
+		hpSlider.value = currHp;
+		hpSlider.gameObject.SetActive(true);
+	}
+
 	void OnMouseDown() {
-		Player.instance.selectedCell?.Unselect();
+		if(Player.instance.selectedCell != null)
+			Player.instance.selectedCell.Unselect();
 		Player.instance.selectedCell = this;
 		Select();
 	}

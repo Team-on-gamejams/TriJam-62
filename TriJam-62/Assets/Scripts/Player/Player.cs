@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public static Player instance;
 
 	public CinemachineVirtualCamera camera;
+	public GeneralCameraShake shake;
 	public TextMeshProUGUI energyText;
 	public BuildSelection buildSelectionPrefab;
 	public BuildSelection buildSelectionCurr;
