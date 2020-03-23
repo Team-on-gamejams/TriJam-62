@@ -3381,6 +3381,58 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1113870167}
+    - target: {fileID: 1136375305335137680, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 202.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137680, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 161.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137680, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.2000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137680, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 570.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_text
+      value: 'Made by Team-on
+
+        for TriJam-62'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 35.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136375305335137687, guid: d3ed87ebdc4f65a4083f68d198a663af,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1136375305404854010, guid: d3ed87ebdc4f65a4083f68d198a663af,
         type: 3}
       propertyPath: m_LocalPosition.x
