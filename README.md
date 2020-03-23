@@ -22,5 +22,6 @@ TriJam is a jam where your goal is to try and make something playable (and fun) 
  * [Alena Kuznetsova](http://alenakuznetsova.com/?attachment_id=219) - background art
 
 # Screenshots
-![Screen1](Screenshots/Screenshot1.jpg)
-![Screen1](Screenshots/Screenshot2.jpg)
+![Screen1](Screenshots/1.jpg)  
+![Screen1](Screenshots/2.jpg)  
+![Screen1](Screenshots/3.jpg)  
