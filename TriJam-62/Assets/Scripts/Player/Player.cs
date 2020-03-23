@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
 
 	public CinemachineVirtualCamera camera;
 	public TextMeshProUGUI energyText;
+	public BuildSelection buildSelectionPrefab;
+	public BuildSelection buildSelectionCurr;
 
 	public float currEnergy;
 	public float maxEnergy;

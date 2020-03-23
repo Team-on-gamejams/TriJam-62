@@ -12,14 +12,16 @@ public class BaseCell : MonoBehaviour {
 	private void Awake() {
 		currHp = maxHp;
 		selection.SetActive(false);
+
+		OnBuild();
 	}
 
 	public virtual void OnBuild() {
-
+		Player.instance.cells.Add(this);
 	}
 
 	public virtual void OnKill() {
-
+		Player.instance.cells.Remove(this);
 	}
 
 	public virtual void Select() {
