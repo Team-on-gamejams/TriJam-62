@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
 	public BuildSelection buildSelectionPrefab;
 	public BuildSelection buildSelectionCurr;
 
+	public bool isPlaying = false;
+
 	public float currEnergy;
 	public float maxEnergy;
 	public Action onAddEnergy;

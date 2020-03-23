@@ -8,6 +8,7 @@ public class StorageCell : BaseCell {
 	public override void OnBuild() {
 		base.OnBuild();
 		Player.instance.maxEnergy += energyCapAdd;
+		Player.instance.AddEnergy(0);
 	}
 
 	public override void OnKill() {

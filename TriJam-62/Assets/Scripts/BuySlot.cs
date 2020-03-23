@@ -36,6 +36,7 @@ public class BuySlot : MonoBehaviour {
 			BuildSelection selection = Instantiate(Player.instance.buildSelectionPrefab, transform.position, Quaternion.identity, null).GetComponent< BuildSelection>();
 			selection.price = price;
 			selection.buildPrefab = prefab;
+			Player.instance.buildSelectionCurr = selection;
 		}
 	}
 

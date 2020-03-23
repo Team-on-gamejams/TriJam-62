@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 3832216370992020177}
   m_Layer: 0
   m_Name: CannonCell
-  m_TagString: Untagged
+  m_TagString: Cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needEnergyForBuild: 20
   maxHp: 100
-  takeDmg: 10
+  takeDmg: 30
   currHp: 0
   selection: {fileID: 6697970090712387615}
   hpSlider: {fileID: 1668685843602667754}

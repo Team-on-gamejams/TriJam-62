@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 7321690309916857637}
   m_Layer: 0
   m_Name: StorageCell
-  m_TagString: Untagged
+  m_TagString: Cell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needEnergyForBuild: 20
   maxHp: 100
-  takeDmg: 10
+  takeDmg: 30
   currHp: 0
   selection: {fileID: 884643658277830635}
   hpSlider: {fileID: 2089782508}

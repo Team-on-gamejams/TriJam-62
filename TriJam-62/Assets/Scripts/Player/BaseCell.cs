@@ -35,6 +35,7 @@ public class BaseCell : MonoBehaviour {
 	}
 
 	public virtual void Select() {
+		Player.instance.isPlaying = true;
 		selection.SetActive(true);
 		Player.instance.camera.Follow = this.gameObject.transform;
 		Player.instance.camera.LookAt = this.gameObject.transform;
