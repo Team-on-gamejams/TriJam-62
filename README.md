@@ -4,7 +4,8 @@ Theme: Viral infection
 
 ![Cover](Screenshots/Cover.png)
 
-Top-down strategic defence. Protect your cells from virus
+Made in 2:52 hours for TriJam-62  
+You are a multicellular creature, who got attacked by virus. Survive as long as you can  
 
 # Downloads and Links
 Available in [Windows, OSX, Linux and Web](https://teamon.itch.io/cells-hive-mind). If you encounter any problem, please leave a issue! 
