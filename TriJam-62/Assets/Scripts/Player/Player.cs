@@ -47,7 +47,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void Restart() {
-		Application.LoadLevel(UnityEngine.Random.Range(0, 2));
+		Application.LoadLevel(UnityEngine.Random.Range(1, 2));
 	}
 
 	public void AddEnergy(float e) {
