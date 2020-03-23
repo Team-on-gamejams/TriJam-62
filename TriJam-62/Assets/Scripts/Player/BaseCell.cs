@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BaseCell : MonoBehaviour {
 	public float needEnergyForBuild = 20.0f;
 	public float maxHp = 100.0f;
-	public float takeDmg = 10;
+	public float takeDmg = 30;
 	public float currHp;
 
 	public GameObject selection;
