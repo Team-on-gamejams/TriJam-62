@@ -14,7 +14,12 @@ public class Player : MonoBehaviour {
 	public BuildSelection buildSelectionPrefab;
 	public BuildSelection buildSelectionCurr;
 
+	public TextMeshProUGUI scoreText;
+	public float score;
+
 	public bool isPlaying = false;
+	public GameObject tutorial;
+	public GameObject endGame;
 
 	public float currEnergy;
 	public float maxEnergy;
@@ -29,6 +34,10 @@ public class Player : MonoBehaviour {
 
 	private void Update() {
 		AddEnergy(Time.deltaTime);
+
+		if (isPlaying) {
+			scoreText.text = "Score: " + (score += Time.deltaTime).ToString("0");
+		}
 	}
 
 	public void AddEnergy(float e) {

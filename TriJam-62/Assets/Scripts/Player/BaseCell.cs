@@ -36,6 +36,7 @@ public class BaseCell : MonoBehaviour {
 
 	public virtual void Select() {
 		Player.instance.isPlaying = true;
+		Player.instance.tutorial.SetActive(false);
 		selection.SetActive(true);
 		Player.instance.camera.Follow = this.gameObject.transform;
 		Player.instance.camera.LookAt = this.gameObject.transform;
@@ -49,7 +50,7 @@ public class BaseCell : MonoBehaviour {
 		}
 		else {
 			LeanTween.cancel(Player.instance.camera.gameObject, false);
-			LeanTween.value(Player.instance.camera.gameObject, Player.instance.camera.m_Lens.OrthographicSize, 20.0f, 0.5f)
+			LeanTween.value(Player.instance.camera.gameObject, Player.instance.camera.m_Lens.OrthographicSize, 17.0f, 0.5f)
 				.setOnUpdate((float s) => { 
 					Player.instance.camera.m_Lens.OrthographicSize = s;
 				});
