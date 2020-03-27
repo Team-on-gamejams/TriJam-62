@@ -1,4 +1,4 @@
-# Cells hive mindE
+# Cells hive mind
 [TriJam #62: The 3 hour game jam](https://itch.io/jam/trijam-62)  
 Theme: Viral infection  
 
